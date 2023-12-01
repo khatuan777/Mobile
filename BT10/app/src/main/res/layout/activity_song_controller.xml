@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context=".SongControllerActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="463dp"
+        android:layout_marginEnd="-2dp"
+        android:padding="10dp"
+        android:text="Tên bài hát"
+        android:textColor="#fff"
+        android:textSize="27dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <ImageButton
+        android:id="@+id/btn_previous"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginBottom="51dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/previous" />
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="279dp"
+        android:layout_marginBottom="49dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/next_button" />
+
+    <ImageButton
+        android:id="@+id/btn_stop"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="212dp"
+        android:layout_marginBottom="51dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/btn_play"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/play_buttton" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="139dp" />
+
+    <TextView
+        android:id="@+id/tv_timeSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="539dp"
+        android:layout_marginEnd="18dp"
+        android:text="00:00"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <TextView
+        android:id="@+id/tv_timeCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="535dp"
+        android:text="00:00"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="344dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/disc_rotate"
+        android:layout_width="267dp"
+        android:layout_height="257dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:background="@drawable/background"
+        app:cardCornerRadius="500dp"
+        >
+        <ImageView
+            android:id="@+id/disc_cd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cd"
+            android:background="@drawable/background"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
